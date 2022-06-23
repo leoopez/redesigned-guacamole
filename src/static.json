@@ -1,0 +1,108 @@
+{
+    "projects": [
+        {
+            "title": "RoadMapUpiita",
+            "description": {
+                "en": "Road map of careers taught by the upiita",
+                "es": "Ruta recomendada de carreras impartidas por la upiita"
+            },
+            "tecnologies": ["React"],
+            "github": "https://github.com/leoopez/RoadMapUpiita",
+            "deploy": "https://roadmapupiiita.netlify.app"
+        },
+        {
+            "title": "Portfolio",
+            "description": {
+                "en": "Personal Portofolio",
+                "es": "Portafolio Personal"
+            },
+            "tecnologies": ["React", "Webpack", "Sass"],
+            "github": "https://github.com/leoopez/leoopez.github.io",
+            "deploy": "https://leoocode.netlify.app/"
+        }
+    ],
+    "navigation": {
+        "en": ["Projects", "Technologies", "Skills", "Contact"],
+        "es": ["Proyectos", "Tecnologías", "Habilidades", "Contacto"]
+    },
+    "presentation": {
+        "name": "Leonardo Ortiz Lopez",
+        "en": {
+            "title": " Hi, I am ",
+            "commands": [
+                "Welcome to my Porfolio",
+                "Software Engineer",
+                "Full Stack Web Developer",
+                "Especialista en Backend"
+            ]
+        },
+        "es": {
+            "title": " Hola, soy ",
+            "commands": [
+                "Bienvenido a mi Portafolio",
+                "Ingeniero de Software",
+                "Desarrollador Full Stack",
+                "Especialista en Backend"
+            ]
+        }
+    },
+    "tecnologies": {
+        "Languages": [
+            "JS/Typescript",
+            "Go",
+            "C++",
+            "Python"
+        ],
+        "frontend": [
+            "React",
+            "Redux",
+            "HTML/CSS",
+            "SASS",
+            "Tailwindscss - Bootstrap"
+        ],
+        "backend": [
+            "Mongo DB",
+            "PostgresDB",
+            "Amazon Web Services"
+        ],
+        "devops": [
+            "Docker",
+            "Kubernetes",
+            "CI/CD"
+        ],
+        "": [
+            "Git",
+            "GraphQL",
+            "Bitbucket"
+        ]
+    },
+    "skills": {
+        "en": [
+            "REST",
+            "Microservices",
+            "OOP",
+            "Functional Programming",
+            "Cloud",
+            "Algoritms",
+            "Data Structures"
+        ],
+        "es": [
+            "Microservicios",
+            "POO",
+            "Programacion Funcional",
+            "Servicios en la Nube",
+            "Algoritmos",
+            "Estructura de Datos"
+        ]
+    },
+    "hobbies": {
+        "en": [
+            "Chess",
+            "Competitive Programming"
+        ],
+        "es": [
+            "Ajedrez",
+            "Competencia de Programacion"
+        ]
+    }
+}
