@@ -46,35 +46,83 @@
             ]
         }
     },
-    "tecnologies": {
-        "Languages": [
-            "JS/Typescript",
-            "Go",
-            "C++",
-            "Python"
-        ],
-        "frontend": [
-            "React",
-            "Redux",
-            "HTML/CSS",
-            "SASS",
-            "Tailwindscss - Bootstrap"
-        ],
-        "backend": [
-            "Mongo DB",
-            "PostgresDB",
-            "Amazon Web Services"
-        ],
-        "devops": [
-            "Docker",
-            "Kubernetes",
-            "CI/CD"
-        ],
-        "": [
-            "Git",
-            "GraphQL",
-            "Bitbucket"
-        ]
+    "technologies": {
+        "en": {
+            "title": "Technologies"
+        },
+        "es": {
+            "title": "Tecnologías"
+        },
+        "subjects": {
+            "Languages": {
+                "en": {
+                    "key": "Languages"
+                },
+                "es": {
+                    "key": "Lenguajes"
+                },
+                "items": [
+                    "JS/Typescript",
+                    "Go",
+                    "C++",
+                    "Python"
+                ]
+            },
+            "frontend": {
+                "en": {
+                    "key": "Frontend"
+                },
+                "es": {
+                    "key": "Frontend"
+                },
+                "items": [
+                    "React",
+                    "Redux",
+                    "HTML/CSS",
+                    "SASS",
+                    "Tailwindscss - Bootstrap"
+                ]
+            },
+            "backend": {
+                "en": {
+                    "key": "Backend"
+                },
+                "es": {
+                    "key": "Backend"
+                },
+                "items": [
+                    "Mongo DB",
+                    "PostgresDB",
+                    "Amazon Web Services"
+                ]
+            }, 
+            "devops": {
+                "en": {
+                    "key": "DevOps"
+                },
+                "es": {
+                    "key": "DevOps"
+                },
+                "items": [
+                    "Docker",
+                    "Kubernetes",
+                    "CI/CD"
+                ]
+            },
+            "tools": {
+                "en": {
+                    "key": "Tools"
+                },
+                "es": {
+                    "key": "Herramientas"
+                },
+                "items": [
+                    "Git",
+                    "GraphQL",
+                    "Bitbucket"
+                ]
+            }
+        }
     },
     "skills": {
         "en": [
