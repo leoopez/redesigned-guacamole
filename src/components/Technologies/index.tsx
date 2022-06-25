@@ -1,4 +1,4 @@
-import staticInfo  from "../../static.json";
+import staticInfo  from "../../static/static.json";
 import { useLanguage } from "../../context/useLanguage";
 
 import Section from "../Generics/Section";

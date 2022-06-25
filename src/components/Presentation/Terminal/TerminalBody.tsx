@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from "styled-components";
 
-import staticInfo  from "../../../static.json";
+import staticInfo  from "../../../static/static.json";
 import { useLanguage } from "../../../context/useLanguage";
 import { IStyleComponent } from "../../Generics/interface";
 

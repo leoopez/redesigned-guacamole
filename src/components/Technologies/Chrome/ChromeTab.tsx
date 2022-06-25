@@ -1,10 +1,12 @@
 import styled, { css } from "styled-components";
 import { IStyleComponent } from "../../Generics/interface";
+import { useChromeTab } from "./context/useChromeTab";
 
-const ChromeTab = ({ className, children, nTab, onClick }: any ) => {
+const ChromeTab = ({ className, children, nTab }: any ) => {
+    const { changeTab } = useChromeTab();
 
     return (
-        <li className={className} onClick={() => onClick(nTab)}>
+        <li className={className} onClick={() => changeTab(nTab)}>
             {children}
         </li>
     )

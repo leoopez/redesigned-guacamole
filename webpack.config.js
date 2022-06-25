@@ -48,7 +48,18 @@ module.exports = {
         test: /\.html$/i,
         exclude: /node_modules/,
         loader: 'html-loader'
-      }
+      },
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        exclude: /node_modules/,
+        include: [path.join(__dirname, "src/assets")],
+        loader: 'file-loader'
+      },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        use: 'file-loader',
+      },
     ]
   },
 

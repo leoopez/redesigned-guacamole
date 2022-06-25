@@ -34,6 +34,10 @@ h1 {
   margin-bottom: 4rem;
 }
 
+button {
+  all: unset;
+}
+
 a:focus,
 button:focus {
   outline: 0;

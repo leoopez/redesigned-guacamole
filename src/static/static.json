@@ -53,8 +53,8 @@
         "es": {
             "title": "Tecnologías"
         },
-        "subjects": {
-            "Languages": {
+        "subjects": [
+            {
                 "en": {
                     "key": "Languages"
                 },
@@ -68,7 +68,7 @@
                     "Python"
                 ]
             },
-            "frontend": {
+            {
                 "en": {
                     "key": "Frontend"
                 },
@@ -79,11 +79,10 @@
                     "React",
                     "Redux",
                     "HTML/CSS",
-                    "SASS",
-                    "Tailwindscss - Bootstrap"
+                    "SASS"
                 ]
             },
-            "backend": {
+            {
                 "en": {
                     "key": "Backend"
                 },
@@ -96,7 +95,7 @@
                     "Amazon Web Services"
                 ]
             }, 
-            "devops": {
+            {
                 "en": {
                     "key": "DevOps"
                 },
@@ -109,7 +108,7 @@
                     "CI/CD"
                 ]
             },
-            "tools": {
+            {
                 "en": {
                     "key": "Tools"
                 },
@@ -122,7 +121,7 @@
                     "Bitbucket"
                 ]
             }
-        }
+        ]
     },
     "skills": {
         "en": [

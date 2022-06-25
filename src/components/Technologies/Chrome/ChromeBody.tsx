@@ -1,11 +1,24 @@
 import styled from "styled-components";
+import { FaChrome } from "react-icons/fa"
+import { IStyleComponent } from "../../Generics/interface";
+import { useChromeTab } from "./context/useChromeTab";
 
-const ChromeBody = () => {
+import ChromeBodyItem from "./ChromeBodyItem";
+
+const ChromeBody = ({ className }: IStyleComponent) => {
+    const { items } = useChromeTab();
     return (
-        <div>
-            Body
-        </div>
+        <ul className={className}>
+            {items.map((item, i) => (
+                <ChromeBodyItem key={i}>
+                    {item}
+                </ChromeBodyItem>
+            ))}
+        </ul>
     )
 }
 
-export default ChromeBody;
+export default styled(ChromeBody)`
+    position: relative;
+    padding: 2rem;
+`;
