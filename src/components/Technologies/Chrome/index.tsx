@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { SiGooglechrome } from "react-icons/si";
 
 import { IStyleComponent } from "../../Generics/interface";
 import ChromeBody from "./ChromeBody";

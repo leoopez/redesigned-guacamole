@@ -78,6 +78,7 @@
                 "items": [
                     "React",
                     "Redux",
+                    "Webpack",
                     "HTML/CSS",
                     "SASS"
                 ]
@@ -124,22 +125,44 @@
         ]
     },
     "skills": {
-        "en": [
-            "REST",
-            "Microservices",
-            "OOP",
-            "Functional Programming",
-            "Cloud",
-            "Algoritms",
-            "Data Structures"
-        ],
-        "es": [
-            "Microservicios",
-            "POO",
-            "Programacion Funcional",
-            "Servicios en la Nube",
-            "Algoritmos",
-            "Estructura de Datos"
+        "en": {
+            "title": "Skills",
+            "items": [
+                "REST",
+                "Microservices",
+                "OOP",
+                "Functional Programming",
+                "Cloud",
+                "Algorithms",
+                "Data Structures",
+                "Responsive Design",
+                "Animations"
+            ]
+        },
+        "es": {
+            "title": "Habilidades",
+            "items": [
+                "REST",
+                "Microservicios",
+                "POO",
+                "Programacion Funcional",
+                "Servicios en la Nube",
+                "Algoritmos",
+                "Estructura de Datos",
+                "Diseño de respuesta",
+                "Animaciones"
+            ]
+        },
+        "icons":  [
+            "js",
+            "go",
+            "cpp",
+            "js",
+            "ts",
+            "cpp",
+            "cpp",
+            "css",
+            "css"
         ]
     },
     "hobbies": {

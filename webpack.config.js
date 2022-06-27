@@ -50,15 +50,16 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
+        test: /\.(png|jp(e*)g|gif)$/,
         exclude: /node_modules/,
-        include: [path.join(__dirname, "src/assets")],
+        include: [path.join(__dirname, "src/static")],
         loader: 'file-loader'
       },
       {
-        test: /\.svg$/,
+        test: /\.svg$/i,
         exclude: /node_modules/,
-        use: 'file-loader',
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack'],
       },
     ]
   },
