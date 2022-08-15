@@ -4,13 +4,14 @@ import { useVscTab } from "./context/useVsc";
 
 interface IVscBodyTab extends IStyleComponent {
     text: string;
+    number: number;
     selected?: boolean;
 };
 
-const VscBodyTab = ({ className, text }: IVscBodyTab) => {
-    const { addTabs } = useVscTab()
+const VscBodyTab = ({ className, text, number }: IVscBodyTab) => {
+    const { changeTab } = useVscTab()
     const onClick = () => {
-        addTabs(text);
+        changeTab(number);
     }
 
     return <li className={className} onClick={onClick}>

@@ -5,16 +5,15 @@ import VscBodyTabs from "./VscBodyTabs";
 import VscBodyContent from "./VscBodyContent";
 
 const VscBody = ({ className }: IStyleComponent) => {
-    const { tabs } = useVscTab()
     return (
         <div className={className}>
             <VscBodyTabs />
-            {tabs.length > 0 && <VscBodyContent />}
+            <VscBodyContent />
         </div>
     )
 }
 
 export default styled(VscBody)`
-    width: 65%;
     padding: 1rem;
-`;
+    height: 100%;
+    `;

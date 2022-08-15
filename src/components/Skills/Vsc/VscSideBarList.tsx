@@ -11,7 +11,7 @@ const VscSideBarList = ({ className }: IStyleComponent ) => {
     const { items } = skills[lan];
     return (
         <ul className={className}>
-            {items.map((item, i) => <VscSideBarItem key={i} text={item}/>)}
+            {items.map((item, i) => <VscSideBarItem key={i} text={item.key} number={i}/>)}
         </ul>
     )
 }
@@ -19,6 +19,5 @@ const VscSideBarList = ({ className }: IStyleComponent ) => {
 export default styled(VscSideBarList)`
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     margin-left: 2.5rem;
 `;

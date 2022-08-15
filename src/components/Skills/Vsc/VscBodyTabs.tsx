@@ -1,13 +1,19 @@
 import styled from "styled-components";
+import { useLanguage } from "../../../context/useLanguage";
+import staticInfo from "../../../static/static.json";
 import { IStyleComponent } from "../../Generics/interface";
 import { useVscTab } from "./context/useVsc";
 import VscBodyTab from "./VscBodyTab";
 
+const { skills } = staticInfo;
+
 const VscBodyTabs = ({ className }: IStyleComponent) => {
-    const { tab, tabs } = useVscTab(); 
+    const { tab } = useVscTab(); 
+    const { lan } = useLanguage();
+    const { items } = skills[lan];
 
     return <ul className={className}>
-        {tabs.map((text, i) => <VscBodyTab key={i} text={text} selected={tab === text} />) }
+        {items.map((item, i) => <VscBodyTab key={i} text={item.key} selected={tab === i} number={i}/>) }
     </ul>
 }
 

@@ -18,9 +18,13 @@ const VscHeader = ({ className }: IStyleComponent) => {
 };
 
 export default styled(VscHeader)`
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
-    width: 35%;
+    display: none;
+
+    @media screen  and (min-width: 45em) {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        flex-wrap: nowrap;
+    }
 `;

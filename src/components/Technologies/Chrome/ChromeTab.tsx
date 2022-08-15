@@ -16,12 +16,16 @@ export default styled(ChromeTab)<any>(
     (props) => {
         return css`
             background-color: ${props.selected ? "#ffffff" : "transparent"};
-            padding: 0.5rem;
-            padding-bottom: 1rem;
+            padding: 1rem;
             border-radius: 0.5rem;
             position: relative;
-            text-overflow: clip;            
+            text-overflow: ellipsis;
             overflow: hidden;
+
+            @media screen  and (min-width: 45em) {
+                max-width: 110rem;
+                padding: 2rem;
+            }
         `
     }
 )

@@ -7,13 +7,14 @@ import { useVscTab } from "./context/useVsc";
 
 export interface IVscSideBarItem extends IStyleComponent  {
     text: string;
+    number: number;
 }
 
-const VscSideBarItem = ({ className, text }: IVscSideBarItem) => {
-    const { addTabs } = useVscTab();
+const VscSideBarItem = ({ className, text, number }: IVscSideBarItem) => {
+    const { changeTab } = useVscTab();
 
     const onClick = () => {
-        addTabs(text);
+        changeTab(number);
     }
 
     return (
@@ -28,6 +29,7 @@ const VscSideBarItem = ({ className, text }: IVscSideBarItem) => {
 
 export default styled(VscSideBarItem)`
     display: flex;
+    padding: 0.5rem;
     gap: 0.5rem;
 `;
 

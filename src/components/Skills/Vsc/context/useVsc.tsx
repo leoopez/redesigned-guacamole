@@ -3,11 +3,8 @@ import { useContext, createContext, useState } from "react";
 export interface Tab {
     isOpen: boolean;
     open?:() => void;
-    tab?: string;
-    tabs?: string[];
-    addTabs?: (arg0: string) => void;
-    deleteTabs?: (arg0: string) => void;
-    changeTab?: (arg0: string) => void;
+    tab?: number;
+    changeTab?: (arg0: number) => void;
 };
 
 const initialState = {
@@ -23,25 +20,15 @@ const TabContext = createContext<Tab>(initialState);
 export const useVscTab = () => useContext(TabContext);
 
 export default function TabProvider({ children }: Props) {
-    const [ tab, setTab] = useState("");
-    const [ tabs, setTabs] = useState([]);
+    const [ tab, setTab] = useState(0);
 
     const [ isOpen, setOpen] = useState(true);
     
-    const changeTab = (tabToadd: string) => setTab(tabToadd);
-
-    const addTabs = (tabToadd: string) => {
-        const index = tabs.indexOf(tabToadd);
-        setTab(tabToadd);
-
-        if(index < 0) {
-            setTabs([...tabs, tabToadd]);
-        }
-    };
+    const changeTab = (tabToadd: number) => setTab(tabToadd);
 
     const open = () => setOpen(!isOpen);
     return (
-        <TabContext.Provider value={{ isOpen, tab, tabs, changeTab , addTabs, open }}>
+        <TabContext.Provider value={{ isOpen, tab, changeTab , open }}>
             {children}
         </TabContext.Provider>
     );

@@ -111,6 +111,17 @@
             },
             {
                 "en": {
+                    "key": "Cloud"
+                },
+                "es": {
+                    "key": "La Nube"
+                },
+                "items": [
+                    "AWS"
+                ]
+            },
+            {
+                "en": {
                     "key": "Tools"
                 },
                 "es": {
@@ -128,29 +139,57 @@
         "en": {
             "title": "Skills",
             "items": [
-                "REST",
-                "Microservices",
-                "OOP",
-                "Functional Programming",
-                "Cloud",
-                "Algorithms",
-                "Data Structures",
-                "Responsive Design",
-                "Animations"
+                {
+                    "key": "designPatterns",
+                    "items": [
+                        "OOP",
+                        "Event-driven",
+                        "Functional Programming"
+                    ]
+                },
+                {
+                    "key": "architectures",
+                    "items": [
+                        "Microservices"
+                    ]
+                },
+                {
+                    "key": "computerScience",
+                    "items": [
+                        "Algorithms",
+                        "Data Structures",
+                        "Databases",
+                        "Operating Systems"
+                    ]
+                }
             ]
         },
         "es": {
             "title": "Habilidades",
             "items": [
-                "REST",
-                "Microservicios",
-                "POO",
-                "Programacion Funcional",
-                "Servicios en la Nube",
-                "Algoritmos",
-                "Estructura de Datos",
-                "Diseño de respuesta",
-                "Animaciones"
+                {
+                    "key": "patronesDeDiseno",
+                    "items": [
+                        "POO",
+                        "Event-driven",
+                        "Programacion Funcional"
+                    ]
+                },
+                {
+                    "key": "arquitecturas",
+                    "items": [
+                        "Microservicios"
+                    ]
+                },
+                {
+                    "key": "computerScience",
+                    "items": [
+                        "Algoritmos",
+                        "Estructura de Datos",
+                        "Bases de Datos",
+                        "Sistemas Operativos"
+                    ]
+                }
             ]
         },
         "icons":  [
