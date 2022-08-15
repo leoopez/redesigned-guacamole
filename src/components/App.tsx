@@ -5,6 +5,7 @@ import Presentation from "./Presentation/index";
 import Technologies from "./Technologies";
 import Skills from "./Skills";
 import BackTop from "./Generics/BackTop";
+import LanguageProvider from "../context/useLanguage";
 
 const Body = styled.div`
   background-color: #f1f3f5;
@@ -14,13 +15,15 @@ const Body = styled.div`
 
 const App: React.FC = () => {
   return (
-    <Body>
-      <Header />
-      <Presentation />
-      <Technologies />
-      <Skills />
-      <BackTop />
-    </Body>
+    <LanguageProvider>
+      <Body>
+        <Header />
+        <Presentation />
+        <Technologies />
+        <Skills />
+        <BackTop />
+      </Body>
+    </LanguageProvider>
   )
 };
 
