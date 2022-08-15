@@ -14,7 +14,7 @@ export default (): JSX.Element => {
   const { name } = presentation;
   
   return (
-    <Section id="presentation">
+    <Section id={title}>
       <h1>
         {title}
         <Name name={name} />

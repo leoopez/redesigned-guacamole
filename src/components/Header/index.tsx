@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Header = ({ className }: IStyleComponent) => {
     return (
-        <header className={className}>
+        <header className={className} id="header">
             <Navbar />
         </header>
     )

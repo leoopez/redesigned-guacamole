@@ -22,8 +22,8 @@
         }
     ],
     "navigation": {
-        "en": ["Projects", "Technologies", "Skills", "Contact"],
-        "es": ["Proyectos", "Tecnologías", "Habilidades", "Contacto"]
+        "en": ["Technologies", "Skills", "Contact"],
+        "es": ["Tecnologías", "Habilidades", "Contacto"]
     },
     "presentation": {
         "name": "Leonardo Ortiz Lopez",

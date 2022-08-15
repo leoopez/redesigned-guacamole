@@ -11,7 +11,7 @@ export default (): JSX.Element => {
   const { title } = technologies[lan]
   
   return (
-    <Section id="presentation">
+    <Section id={title}>
       <h1>
         {title}
       </h1>

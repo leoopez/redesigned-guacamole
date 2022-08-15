@@ -7,21 +7,20 @@ import staticInfo from "../../../src/static/static.json";
 
 interface ItemStyle extends IStyleComponent {
     item: string;
+    setIsOpen: (f: any) => any;
 }
 
 const { navigation } = staticInfo;
 
 const NavbarItems = ({ className, setIsOpen, open }: any) => {
     const { lan } = useLanguage();
-
+    
     return (
         <ul className={className}>
             <StyledCloseIcon setIsOpen={setIsOpen}/>
             {navigation[lan].map((item: any, i: number) => {
                 return (
-                    <StyledItem key={i} item={item}>
-                        {item}
-                    </StyledItem>
+                    <StyledItem key={i} item={item} setIsOpen={setIsOpen}/>
                 )
             })}
         </ul>
@@ -52,9 +51,15 @@ export default styled(NavbarItems)<any>(
     }
 `});
 
-const Item = ({ className, item }: ItemStyle ) => {
+const Item = ({ className, item, setIsOpen}: ItemStyle ) => {
+    const scrollIntoView = (e: any) => {
+        e.preventDefault();
+        document.getElementById(item).scrollIntoView();
+        setIsOpen(false);
+    };
+
     return (
-        <li className={className}>
+        <li className={className} onClick={scrollIntoView}>
             {item}
         </li>
     )

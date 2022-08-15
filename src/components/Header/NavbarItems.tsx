@@ -6,6 +6,10 @@ import staticInfo from "../../../src/static/static.json";
 
 const { navigation } = staticInfo;
 
+interface ItemStyle extends IStyleComponent {
+    item: string;
+}
+
 const NavbarItems = ({ className }: IStyleComponent) => {
     const { lan } = useLanguage();
 
@@ -13,12 +17,24 @@ const NavbarItems = ({ className }: IStyleComponent) => {
         <ul className={className}>
             {navigation[lan].map((item: any, i: number) => {
                 return (
-                    <li key={i}>
-                        {item}
-                    </li>
+                    <Item key={i} item={item} />
                 )
             })}
         </ul>
+    )
+};
+
+
+const Item = ({ className, item}: ItemStyle ) => {
+    const scrollIntoView = (e: any) => {
+        e.preventDefault();
+        document.getElementById(item).scrollIntoView();
+    };
+
+    return (
+        <li className={className} onClick={scrollIntoView}>
+            {item}
+        </li>
     )
 };
 

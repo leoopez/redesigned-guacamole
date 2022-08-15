@@ -12,7 +12,7 @@ export default (): JSX.Element => {
   const { title } = skills[lan]
   
   return (
-    <Section id="presentation">
+    <Section id={title}>
       <h1>
         {title}
       </h1>
