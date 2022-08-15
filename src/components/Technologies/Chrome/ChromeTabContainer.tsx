@@ -32,5 +32,7 @@ export default styled(ChromeHeaderContainer)`
     box-shadow:inset 0px -1rem 0px 0px #fff;
     background: rgb(238,238,238);
     display: flex;
-    padding-left:1rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 1rem;
 `;

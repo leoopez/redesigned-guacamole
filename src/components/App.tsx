@@ -16,7 +16,8 @@ const App: React.FC = () => {
     <Body>
       <Header />
       <Presentation />
-      {/* <Technologies />
+      <Technologies />
+      {/* 
       <Skills /> */}
     </Body>
   )
