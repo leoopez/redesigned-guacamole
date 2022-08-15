@@ -32,7 +32,7 @@ export default styled(VscBodyTab)<any>(
                 `
                 &::before {
                     content: "";
-                    background: green;
+                    background: green   ;
                     position: absolute;
                     height: 0.5rem;
                     width: 110%;

@@ -12,8 +12,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  min-width: 30rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  min-width: 375px;
 }
 
 ul {
@@ -29,11 +29,6 @@ a {
   color: inherit;
 }
 
-h1 {
-  font-size: 3.4rem;
-  margin-bottom: 4rem;
-}
-
 button {
   all: unset;
 }
@@ -42,22 +37,4 @@ a:focus,
 button:focus {
   outline: 0;
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-  line-height: 1.2;
-}
-
-@media screen and (min-width: 45em) {
-  .main {
-    max-width: 110rem;
-    width: 95%;
-    margin: 0 auto;
-  }
 }
