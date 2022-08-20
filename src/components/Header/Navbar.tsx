@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { useTheme } from "../../context/useTheme";
 import { IStyleComponent } from "../Generics/interface";
 
 import NavbarItems from "./NavbarItems";
@@ -8,13 +9,14 @@ import NavbarOptions from "./NavbarOptions";
 
 const Header = ({ className }: IStyleComponent) => {
     const [ isOpen, setIsOpen ] = useState(false);
+    
     return (
         <nav className={className}>
             <span style={{ fontSize:" 3rem", fontWeight: 800 }}>
                 LO.
             </span>
             <NavbarItems />
-            <NavbarItemsResponsive setIsOpen={setIsOpen} open={isOpen}/>
+                <NavbarItemsResponsive setIsOpen={setIsOpen} open={isOpen} />
             <NavbarOptions setIsOpen={setIsOpen} open={isOpen}/>
         </nav>
     )

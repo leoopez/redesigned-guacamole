@@ -27,5 +27,4 @@ export default styled(VscBodyContent)`
     height: 89%;
     border-bottom-left-radius:  2rem;
     border-bottom-right-radius:  2rem;
-    background: #FDF7E2; 
 `

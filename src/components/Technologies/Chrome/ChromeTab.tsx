@@ -15,7 +15,7 @@ const ChromeTab = ({ className, children, nTab }: any ) => {
 export default styled(ChromeTab)<any>(
     (props) => {
         return css`
-            background-color: ${props.selected ? "#ffffff" : "transparent"};
+            background-color: ${props.selected ? "#FDF7E2" : "transparent"};
             padding: 1rem;
             border-radius: 0.5rem;
             position: relative;

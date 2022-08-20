@@ -1,5 +1,14 @@
 import { useContext, createContext, useState } from "react";
-import { LanguageContent, Languages } from "./useLanguage.interface"
+
+export enum Languages {
+  en = "en",
+  es = "es"
+}
+
+export interface LanguageContent {
+  lan: Languages;
+  toggleLan?:() => void;
+}
 
 const initialState = {
     lan: Languages.es,
@@ -17,10 +26,7 @@ export default function LanguageProvider({ children }: Props) {
   const [lan, setLan] = useState(Languages.es);
 
   const toggleLan = () => {
-    console.log(lan)
-
     setLan(lan => lan === Languages.es ? Languages.en : Languages.es);
-    console.log(lan)
   }
 
   return (
