@@ -31,7 +31,6 @@ const TerminalHeaderComponent = ({ className }: IStyleComponent) => {
 
 export default styled(TerminalHeaderComponent)`
     border-bottom: 1px solid rgb(212,212,212);
-    background: rgb(238,238,238);
     border-top-left-radius	: 2rem;
     border-top-right-radius	: 2rem;
     padding: 1rem;

@@ -4,6 +4,7 @@ import { useLanguage } from "../../context/useLanguage";
 import { FaTimes } from "react-icons/fa";
 
 import staticInfo from "../../../src/static/static.json";
+import { useTheme } from "../../context/useTheme";
 
 interface ItemStyle extends IStyleComponent {
     item: string;
@@ -12,44 +13,49 @@ interface ItemStyle extends IStyleComponent {
 
 const { navigation } = staticInfo;
 
-const NavbarItems = ({ className, setIsOpen, open }: any) => {
+export default ({ setIsOpen, open }: any) => {
     const { lan } = useLanguage();
-    
+
     return (
-        <ul className={className}>
+        <NavbarItems open={open}>
             <StyledCloseIcon setIsOpen={setIsOpen}/>
             {navigation[lan].map((item: any, i: number) => {
-                return (
-                    <StyledItem key={i} item={item} setIsOpen={setIsOpen}/>
-                )
+                return <StyledItem key={i} item={item} setIsOpen={setIsOpen}/>
             })}
-        </ul>
+        </NavbarItems>
     )
 };
 
-export default styled(NavbarItems)<any>(
+const NavbarItems = styled.ul<any>(
     (props) => {
+        const { theme } = useTheme();
         return css`
-    display: flex;
-    align-items: center;
-    background-color: #f8f9fa;
-    justify-content:center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    flex-direction: column;
-    left: -110%;
-    transition: left 250ms;
-    z-index: 100;
-    gap: 1rem;
-    ${props.open && `left: 0;`}
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -110%;
+            transition: left 250ms;
+            z-index: 100;
+            gap: 1rem;
+            ${props.open && `left: 0;`}
 
-    @media screen  and (min-width: 45em) {
-        gap: 1rem;
-        display: none;
+            background-color: ${theme ? "#f1f3f5" : "#313335"};
+            color: ${theme ? "#313335" : "#f1f3f5"};
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            @media screen  and (min-width: 45em) {
+                gap: 1rem;
+                display: none;
+            }
+        `
     }
-`});
+);
 
 const Item = ({ className, item, setIsOpen}: ItemStyle ) => {
     const scrollIntoView = (e: any) => {

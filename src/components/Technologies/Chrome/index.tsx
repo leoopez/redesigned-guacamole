@@ -27,7 +27,6 @@ const Chrome = ({ className } : IStyleComponent) => {
 export default styled(Chrome)`
     width: min(95vw, 80rem);
     height: min(80vh, 50rem);
-    background: #ffffff;
     border-radius: 2rem;
     box-shadow: rgba(0,0,0,0.2) 0px 17px 10px 0px;
     position: relative;

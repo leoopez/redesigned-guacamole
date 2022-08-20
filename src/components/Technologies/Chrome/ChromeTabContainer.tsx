@@ -28,7 +28,6 @@ const ChromeHeaderContainer = ({ className }: IStyleComponent) => {
 };
 
 export default styled(ChromeHeaderContainer)`
-    background: rgb(238,238,238);
     display: flex;
     padding-left: 1rem;
     flex-wrap: wrap;
