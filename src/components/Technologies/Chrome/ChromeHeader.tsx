@@ -1,19 +1,26 @@
-import styled from "styled-components";
-import { IStyleComponent } from "../../Generics/interface";
+import styled, { css } from "styled-components";
+import { useTheme } from "../../../context/useTheme";
 import ChromeButtons from "./ChromeButtons";
 
 import ChromeTapContainer from "./ChromeTabContainer";
 
-const ChromeHeader = ({ className }: IStyleComponent) => {
+export default () => {
     return (
-        <div className={className}>
+        <ChromeHeader>
             <ChromeTapContainer />
             <ChromeButtons/>
-        </div>
+        </ChromeHeader>
     )
 }
 
-export default styled(ChromeHeader)`
-    border-top-left-radius	: 2rem;
-    border-top-right-radius	: 2rem;
-`;
+const ChromeHeader = styled.div<any>(
+    (props) => {
+        const { theme } = useTheme();
+
+        return css`
+            background-color: ${theme ? "#DEE1E6" : "#2A3136"};
+            border-top-left-radius	: 2rem;
+            border-top-right-radius	: 2rem;
+        `;
+    }
+);

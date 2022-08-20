@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { useTheme } from "../../../context/useTheme";
 import { IStyleComponent } from "../../Generics/interface";
 import { useVscTab } from "./context/useVsc";
 
@@ -21,8 +22,10 @@ const VscBodyTab = ({ className, text, number }: IVscBodyTab) => {
 
 export default styled(VscBodyTab)<any>(
     (props) => {
+        const { theme } = useTheme();
+
         return css`
-            background-color: ${props.selected ? "#FDF7E2" : "transparent"};
+            background-color: ${props.selected ? (theme ? "#FDF7E2" : "#2A3136" ) :   (theme ? "#EEE8D5" : "#000") };
             padding: 2rem 0.5rem;
             text-overflow: ellipsis;
             white-space: nowrap;

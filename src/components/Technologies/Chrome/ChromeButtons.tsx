@@ -13,10 +13,10 @@ const ChromeButtons = ({ className }: IStyleComponent) => {
     return (
         <div className={className}>
             <button disabled={tab === 0} onClick={() => changeTab(tab - 1)}>
-                <ArrowLeft color={tab === 0 ? "gray" : "black"}/>
+                <FiArrowLeft opacity={tab === 0 ?  0.33 : 1 }/>
             </button>
             <button disabled={tab === tabs - 1 } onClick={() => changeTab(tab + 1)}>
-                <ArrowRight color={tab === tabs - 1 ? "gray" : "black"} />
+                <FiArrowRight opacity={tab === tabs - 1 ?   0.33 : 1 } />
             </button>
         </div>
     )
@@ -27,16 +27,3 @@ export default styled(ChromeButtons)`
     gap: 1rem;
     padding: 1rem 2rem;
 `;
-
-const ArrowLeft = styled(FiArrowLeft)<IArrow>(
-    ({ color }) => `
-        color: ${ color };
-    `
-);
-
-
-const ArrowRight = styled(FiArrowRight)<IArrow>(
-    ({ color }) => `
-        color: ${ color };
-    `
-);

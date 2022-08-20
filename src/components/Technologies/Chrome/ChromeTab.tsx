@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { IStyleComponent } from "../../Generics/interface";
+import { useTheme } from "../../../context/useTheme";
 import { useChromeTab } from "./context/useChromeTab";
 
 const ChromeTab = ({ className, children, nTab }: any ) => {
@@ -14,8 +14,10 @@ const ChromeTab = ({ className, children, nTab }: any ) => {
 
 export default styled(ChromeTab)<any>(
     (props) => {
+        const { theme } = useTheme();
+
         return css`
-            background-color: ${props.selected ? "#FDF7E2" : "transparent"};
+            background-color: ${props.selected ? (theme ? "#DEE1E6" : "#2A3136") : "2A3136"};
             padding: 1rem;
             border-radius: 0.5rem;
             position: relative;

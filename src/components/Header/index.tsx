@@ -1,19 +1,26 @@
-import styled from "styled-components";
-import { IStyleComponent } from "../Generics/interface";
+import styled, { css } from "styled-components";
+import { useTheme } from "../../context/useTheme";
 import Navbar from "./Navbar";
 
-const Header = ({ className }: IStyleComponent) => {
+export default  () => {
     return (
-        <header className={className} id="header">
+        <Header id="header">
             <Navbar />
-        </header>
+        </Header>
     )
 };
 
-export default styled(Header)`
-    position relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    height: 12rem;
-`;
+const Header = styled.header<any>(
+    (props) => {
+      const { theme } = useTheme();
+  
+        return css`
+            position relative;
+            z-index: 10000;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            height: 8rem;
+        `;
+    }
+);
