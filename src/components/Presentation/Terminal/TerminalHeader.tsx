@@ -26,7 +26,6 @@ export default () => {
     )
 }
 
-
 const TerminalHeaderComponent = styled.div(
     (props) => {
         const { theme } = useTheme();
@@ -38,6 +37,4 @@ const TerminalHeaderComponent = styled.div(
             padding: 1rem;
         `;
     }
-)
-
-// #EEEFEF
+);

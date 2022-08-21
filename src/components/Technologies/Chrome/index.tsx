@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { useTheme } from "../../../context/useTheme";
 
-import { IStyleComponent } from "../../Generics/interface";
 import ChromeBody from "./ChromeBody";
 import ChromeHeader from "./ChromeHeader";
 import TabProvider from "./context/useChromeTab";
