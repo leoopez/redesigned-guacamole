@@ -12,13 +12,12 @@ const { subjects } = technologies;
 
 export default () => {
     const { lan } = useLanguage();
-    const { tab } = useChromeTab();
 
     return (
         <ChromeHeaderContainer>
             {subjects.map((item: any, i: number) => {
                 return (
-                    <ChromeTab key={i} nTab={i} selected={tab === i}>
+                    <ChromeTab key={i} nTab={i}>
                         {item[lan].key}
                     </ChromeTab>
                 )

@@ -38,3 +38,7 @@ button:focus {
   outline: 0;
   text-decoration: none;
 }
+
+.pointer {
+  cursor: pointer;
+}

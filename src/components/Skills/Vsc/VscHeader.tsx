@@ -1,23 +1,22 @@
 import styled from "styled-components";
 import { SiVisualstudiocode } from "react-icons/si";
-import { IStyleComponent } from "../../Generics/interface";
 import Icon from "../../Generics/Icon";
 import { useVscTab } from "./context/useVsc";
 import VscSideBarList from "./VscSideBarList";
 import VscSideBarHeader from "./VscSideBarHeader";
 
-const VscHeader = ({ className }: IStyleComponent) => {
+export default () => {
     const { isOpen } = useVscTab();
     return (
-        <div className={className}>
+        <VscHeader>
             <Icon Component={SiVisualstudiocode} size={"5rem"} color={"#1F9CF0"}/>
-            <VscSideBarHeader />
+            <VscSideBarHeader/>
             {isOpen && <VscSideBarList />}
-        </div>
+        </VscHeader>
     );
 };
 
-export default styled(VscHeader)`
+const VscHeader = styled.div`
     display: none;
 
     @media screen  and (min-width: 45em) {

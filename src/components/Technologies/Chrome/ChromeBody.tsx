@@ -5,20 +5,20 @@ import { useChromeTab } from "./context/useChromeTab";
 
 import ChromeBodyItem from "./ChromeBodyItem";
 
-const ChromeBody = ({ className }: IStyleComponent) => {
+export default () => {
     const { items } = useChromeTab();
     return (
-        <ul className={className}>
+        <ChromeBody>
             {items.map((item, i) => (
                 <ChromeBodyItem key={i}>
                     {item}
                 </ChromeBodyItem>
             ))}
-        </ul>
+        </ChromeBody>
     )
 }
 
-export default styled(ChromeBody)`
+const ChromeBody = styled.ul`
     position: relative;
     padding: 2rem;
 `;

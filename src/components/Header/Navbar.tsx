@@ -7,22 +7,22 @@ import NavbarItems from "./NavbarItems";
 import NavbarItemsResponsive from "./NavbarItemsResponsive";
 import NavbarOptions from "./NavbarOptions";
 
-const Header = ({ className }: IStyleComponent) => {
+export default ({ className }: IStyleComponent) => {
     const [ isOpen, setIsOpen ] = useState(false);
     
     return (
-        <nav className={className}>
+        <Header className={className}>
             <span style={{ fontSize:" 3rem", fontWeight: 800 }}>
                 LO.
             </span>
             <NavbarItems />
                 <NavbarItemsResponsive setIsOpen={setIsOpen} open={isOpen} />
             <NavbarOptions setIsOpen={setIsOpen} open={isOpen}/>
-        </nav>
+        </Header>
     )
 };
 
-export default styled(Header)`
+const Header = styled.nav`
     display: flex;
     width: 90%;
     justify-content: space-between;

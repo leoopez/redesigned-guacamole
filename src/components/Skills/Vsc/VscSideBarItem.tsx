@@ -5,12 +5,7 @@ import { IStyleComponent } from "../../Generics/interface";
 import Icon from "../../Generics/Icon";
 import { useVscTab } from "./context/useVsc";
 
-export interface IVscSideBarItem extends IStyleComponent  {
-    text: string;
-    number: number;
-}
-
-const VscSideBarItem = ({ className, text, number }: IVscSideBarItem) => {
+export default ({ text, number }: any) => {
     const { changeTab } = useVscTab();
 
     const onClick = () => {
@@ -18,16 +13,16 @@ const VscSideBarItem = ({ className, text, number }: IVscSideBarItem) => {
     }
 
     return (
-        <li className={className} onClick={onClick}>
+        <VscSideBarItem onClick={onClick} className="pointer">
             <Icon Component={SiNodedotjs} size={"2.5rem"} color={"green"}/>
             <TextFixed>
                 {text}
             </TextFixed>
-        </li>
+        </VscSideBarItem>
     );
 };
 
-export default styled(VscSideBarItem)`
+const VscSideBarItem = styled.li`
     display: flex;
     padding: 0.5rem;
     gap: 0.5rem;

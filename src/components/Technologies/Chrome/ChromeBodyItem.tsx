@@ -1,13 +1,9 @@
-import styled from "styled-components";
 import { IStyleComponent } from "../../Generics/interface";
 
-const ChromeBodyItem = ({ className, children }: IStyleComponent) => {
+export default ({ children }: IStyleComponent) => {
     return (
-        <li className={className}>
+        <li>
             {children}
         </li>
     )
 };
-
-export default styled(ChromeBodyItem)`
-`;

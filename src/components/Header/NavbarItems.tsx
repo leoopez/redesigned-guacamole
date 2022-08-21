@@ -10,35 +10,35 @@ interface ItemStyle extends IStyleComponent {
     item: string;
 }
 
-const NavbarItems = ({ className }: IStyleComponent) => {
+export default () => {
     const { lan } = useLanguage();
 
     return (
-        <ul className={className}>
+        <NavbarItems>
             {navigation[lan].map((item: any, i: number) => {
                 return (
                     <Item key={i} item={item} />
                 )
             })}
-        </ul>
+        </NavbarItems>
     )
 };
 
 
-const Item = ({ className, item}: ItemStyle ) => {
+const Item = ({  item }: any ) => {
     const scrollIntoView = (e: any) => {
         e.preventDefault();
         document.getElementById(item).scrollIntoView();
     };
 
     return (
-        <li className={className} onClick={scrollIntoView}>
+        <li className="pointer" onClick={scrollIntoView}>
             {item}
         </li>
     )
 };
 
-export default styled(NavbarItems)`
+const NavbarItems = styled.ul`
     display: none;
     font-size: 2rem;
     font-weight: 500;

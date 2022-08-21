@@ -4,16 +4,16 @@ import { useVscTab } from "./context/useVsc";
 import VscBodyTabs from "./VscBodyTabs";
 import VscBodyContent from "./VscBodyContent";
 
-const VscBody = ({ className }: IStyleComponent) => {
+export default () => {
     return (
-        <div className={className}>
+        <VscBody>
             <VscBodyTabs />
             <VscBodyContent />
-        </div>
+        </VscBody>
     )
 }
 
-export default styled(VscBody)`
+const VscBody = styled.div`
     padding: 1rem;
     height: 100%;
-    `;
+`;

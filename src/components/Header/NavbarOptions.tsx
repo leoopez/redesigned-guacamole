@@ -5,27 +5,26 @@ import { FaSun, FaLanguage, FaMoon, FaBars } from "react-icons/fa";
 import { useLanguage } from "../../context/useLanguage";
 import { useTheme } from "../../context/useTheme";
 
-const NabvarOptions = ({ className, setIsOpen }: any) => {
-
+export default ({ setIsOpen }: any) => {
     const { toggleLan } = useLanguage();
     const { theme, toggleTheme } = useTheme();
     
     return (
-        <ul className={className} >
-            <button onClick={() => toggleLan()}  >
+        <NabvarOptions>
+            <button onClick={() => toggleLan()} className="pointer">
                 <FaLanguage size={"3rem"} />
             </button>
-            <button onClick={() => toggleTheme()}  >
+            <button onClick={() => toggleTheme()} className="pointer">
                 {theme ? <FaMoon size={"3rem"}/> : <FaSun size={"3rem"}/> }
             </button>
             <FaBarsResponsive>
                 <FaBars size={"3rem"} onClick={() => setIsOpen(true)}/>
             </FaBarsResponsive>
-        </ul>
+        </NabvarOptions>
     )
 };
 
-export default styled(NabvarOptions)`
+const NabvarOptions = styled.ul`
     display: flex;
     gap: 1rem;
 `;

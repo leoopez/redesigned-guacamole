@@ -2,22 +2,23 @@ import styled, { css } from "styled-components";
 import { useTheme } from "../../../context/useTheme";
 import { useChromeTab } from "./context/useChromeTab";
 
-const ChromeTab = ({ className, children, nTab }: any ) => {
+export default ({ children, nTab }: any ) => {
     const { changeTab } = useChromeTab();
 
     return (
-        <li className={className} onClick={() => changeTab(nTab)}>
+        <ChromeTab onClick={() => changeTab(nTab)} nTab={nTab} className="pointer">
             {children}
-        </li>
+        </ChromeTab>
     )
 }
 
-export default styled(ChromeTab)<any>(
+const ChromeTab =  styled.li<any>(
     (props) => {
         const { theme } = useTheme();
+        const { tab } = useChromeTab();
 
         return css`
-            background-color: ${props.selected ? (theme ? "#DEE1E6" : "#2A3136") : "2A3136"};
+            background-color: ${props.nTab === tab ? (theme ? "#DEE1E6" : "#2A3136") : "2A3136"};
             padding: 1rem;
             border-radius: 0.5rem;
             position: relative;

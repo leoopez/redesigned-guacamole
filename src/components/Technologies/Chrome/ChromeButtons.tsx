@@ -1,28 +1,23 @@
 import styled from "styled-components";
-import { IStyleComponent } from "../../Generics/interface";
 import { FiArrowRight, FiArrowLeft} from "react-icons/fi";
 import { useChromeTab } from "./context/useChromeTab";
 
-interface IArrow {
-    color: string;
-};
-
-const ChromeButtons = ({ className }: IStyleComponent) => {
+export default () => {
     const { tab, tabs, changeTab } = useChromeTab(); 
 
     return (
-        <div className={className}>
-            <button disabled={tab === 0} onClick={() => changeTab(tab - 1)}>
+        <ChromeButtons>
+            <button disabled={tab === 0} onClick={() => changeTab(tab - 1)} className={tab === 0 ? "" : "pointer" }>
                 <FiArrowLeft opacity={tab === 0 ?  0.33 : 1 }/>
             </button>
-            <button disabled={tab === tabs - 1 } onClick={() => changeTab(tab + 1)}>
+            <button disabled={tab === tabs - 1 } onClick={() => changeTab(tab + 1)} className={tab === tabs - 1 ? "" : "pointer" }>
                 <FiArrowRight opacity={tab === tabs - 1 ?   0.33 : 1 } />
             </button>
-        </div>
+        </ChromeButtons>
     )
 }
 
-export default styled(ChromeButtons)`
+const ChromeButtons = styled.div`
     display: flex;
     gap: 1rem;
     padding: 1rem 2rem;

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { IName } from "./interfaces";
   
-const NameComponent = ({ className, name }: IName) => {
+export default ({ className, name }: IName) => {
     return (
-      <span className={className}>{name}</span>
+      <NameComponent className={className}>{name}</NameComponent>
     )
 };
   
-export default styled(NameComponent)`
+const NameComponent = styled.span`
     color: #f08c00;
 `;
   

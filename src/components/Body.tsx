@@ -8,7 +8,6 @@ import BackTop from "./Generics/BackTop";
 import { useTheme } from "../context/useTheme";
 
 export default () => {
-
     return (
       <Body>
         <Header />

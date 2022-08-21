@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { useTheme } from "../../context/useTheme";
 import Navbar from "./Navbar";
 
-export default  () => {
+export default () => {
     return (
         <Header id="header">
             <Navbar />
