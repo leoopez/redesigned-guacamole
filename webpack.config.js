@@ -50,12 +50,6 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.(png|jp(e*)g|gif)$/,
-        exclude: /node_modules/,
-        include: [path.join(__dirname, "src/static")],
-        loader: 'file-loader'
-      },
-      {
         test: /\.svg$/i,
         exclude: /node_modules/,
         issuer: /\.[jt]sx?$/,

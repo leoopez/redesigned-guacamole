@@ -5,6 +5,7 @@ import Presentation from "./Presentation/index";
 import Technologies from "./Technologies";
 import Skills from "./Skills";
 import BackTop from "./Generics/BackTop";
+import Contact from "./Contact";
 import { useTheme } from "../context/useTheme";
 
 export default () => {
@@ -14,6 +15,7 @@ export default () => {
         <Presentation />
         <Technologies />
         <Skills />
+        <Contact />
         <BackTop />
       </Body>
     )

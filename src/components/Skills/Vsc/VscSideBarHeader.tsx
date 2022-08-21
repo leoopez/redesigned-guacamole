@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import Icon from "../../Generics/Icon";
-import { IStyleComponent } from "../../Generics/interface";
 import { useVscTab } from "./context/useVsc";
 
 export default () => {
@@ -10,7 +9,7 @@ export default () => {
     return (
         <VscSideBarHeader className="pointer">
                 <button onClick={open}>
-                    {isOpen ?  <Icon Component={IoIosArrowForward}/> : <Icon Component={IoIosArrowDown}/>}
+                    {isOpen ?  <Icon Component={IoIosArrowDown}/> : <Icon Component={IoIosArrowForward}/>}
                 </button>
                 <span onClick={open}>
                     PORTFOLIO [WSL]

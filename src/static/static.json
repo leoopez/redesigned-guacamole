@@ -213,5 +213,17 @@
             "Ajedrez",
             "Competencia de Programacion"
         ]
+    },
+    "contact" : {
+        "en": {
+            "title": "Contact"
+        },
+        "es": {
+            "title": "Contacto"
+        },
+        "links": {
+            "LINKEDIN_URL": "https://www.linkedin.com/in/leoocode" ,
+            "GITHUB_URL ": "https://github.com/leoopez"
+        }
     }
 }
