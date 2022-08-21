@@ -17,6 +17,7 @@ const StyleSection = styled(Section)`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 4rem;
 
     @media screen  and (min-width: 45em) {
         max-width: 110rem;
