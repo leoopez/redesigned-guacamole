@@ -1,6 +1,6 @@
-import LanguageProvider from "../context/useLanguage";
-import ThemeProvider from "../context/useTheme";
-import Body from "./Body";
+import LanguageProvider from '../context/useLanguage';
+import ThemeProvider from '../context/useTheme';
+import Body from './Body';
 
 const App: React.FC = () => {
   return (
@@ -9,8 +9,7 @@ const App: React.FC = () => {
         <Body />
       </ThemeProvider>
     </LanguageProvider>
-  )
+  );
 };
-
 
 export default App;

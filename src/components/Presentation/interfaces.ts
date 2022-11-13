@@ -1,19 +1,19 @@
 export interface ITerminal {
-    className?: string;
-    commands: string[]
+  className?: string;
+  commands: string[];
 }
-  
+
 export interface ITerminalCommand {
-    children?: JSX.Element;
-    text: string;
-    nCommand: number
+  children?: JSX.Element;
+  text: string;
+  nCommand: number;
 }
 
 export interface IName {
-    className?: string;
-    name: string;
+  className?: string;
+  name: string;
 }
 
 export interface ITerminalHeader {
-    className?: string;
+  className?: string;
 }

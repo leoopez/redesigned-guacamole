@@ -53,8 +53,8 @@ module.exports = {
         test: /\.svg$/i,
         exclude: /node_modules/,
         issuer: /\.[jt]sx?$/,
-        use: ['@svgr/webpack'],
-      },
+        use: ['@svgr/webpack']
+      }
     ]
   },
 

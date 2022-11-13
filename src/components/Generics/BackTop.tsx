@@ -1,17 +1,17 @@
-import { useState, useEffect } from "react";
-import styled from "styled-components";
+import { useState, useEffect } from 'react';
+import styled from 'styled-components';
 
-import { IStyleComponent } from "./interface";
-import { FaArrowUp } from "react-icons/fa";
+import { IStyleComponent } from './interface';
+import { FaArrowUp } from 'react-icons/fa';
 
 const BackTop = ({ className }: IStyleComponent) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const header = document.getElementById("header");
+    const header = document.getElementById('header');
 
     let observer = new IntersectionObserver(
-      entries => entries.forEach(entry => setShow(!entry.isIntersecting)),
+      (entries) => entries.forEach((entry) => setShow(!entry.isIntersecting)),
       {}
     );
 
@@ -20,15 +20,15 @@ const BackTop = ({ className }: IStyleComponent) => {
 
   const onClick = (e: any) => {
     e.preventDefault();
-    document.getElementById("root").scrollIntoView();
+    document.getElementById('root').scrollIntoView();
   };
 
   return show ? (
     <span className={className} onClick={onClick}>
-      <FaArrowUp size='2rem' />
+      <FaArrowUp size="2rem" />
     </span>
   ) : null;
-}
+};
 
 export default styled(BackTop)`
   display: flex;

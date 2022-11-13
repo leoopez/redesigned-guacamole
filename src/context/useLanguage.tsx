@@ -1,21 +1,21 @@
-import { useContext, createContext, useState } from "react";
+import { useContext, createContext, useState } from 'react';
 
 export enum Languages {
-  en = "en",
-  es = "es"
+  en = 'en',
+  es = 'es'
 }
 
 export interface LanguageContent {
   lan: Languages;
-  toggleLan?:() => void;
+  toggleLan?: () => void;
 }
 
 const initialState = {
-    lan: Languages.es,
+  lan: Languages.es
 };
 
 type Props = {
-  children: JSX.Element,
+  children: JSX.Element;
 };
 
 const LanguageContext = createContext<LanguageContent>(initialState);
@@ -26,12 +26,8 @@ export default function LanguageProvider({ children }: Props) {
   const [lan, setLan] = useState(Languages.es);
 
   const toggleLan = () => {
-    setLan(lan => lan === Languages.es ? Languages.en : Languages.es);
-  }
+    setLan((lan) => (lan === Languages.es ? Languages.en : Languages.es));
+  };
 
-  return (
-    <LanguageContext.Provider value={{ lan, toggleLan }}>
-      {children}
-    </LanguageContext.Provider>
-  );
-};
+  return <LanguageContext.Provider value={{ lan, toggleLan }}>{children}</LanguageContext.Provider>;
+}

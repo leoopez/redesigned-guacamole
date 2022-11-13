@@ -1,227 +1,166 @@
 {
-    "projects": [
-        {
-            "title": "RoadMapUpiita",
-            "description": {
-                "en": "Road map of careers taught by the upiita",
-                "es": "Ruta recomendada de carreras impartidas por la upiita"
-            },
-            "tecnologies": ["React"],
-            "github": "https://github.com/leoopez/RoadMapUpiita",
-            "deploy": "https://roadmapupiiita.netlify.app"
-        },
-        {
-            "title": "Portfolio",
-            "description": {
-                "en": "Personal Portofolio",
-                "es": "Portafolio Personal"
-            },
-            "tecnologies": ["React", "Webpack", "Sass"],
-            "github": "https://github.com/leoopez/leoopez.github.io",
-            "deploy": "https://leoocode.netlify.app/"
-        }
-    ],
-    "navigation": {
-        "en": ["Technologies", "Skills", "Contact"],
-        "es": ["Tecnologías", "Habilidades", "Contacto"]
+  "projects": [
+    {
+      "title": "RoadMapUpiita",
+      "description": {
+        "en": "Road map of careers taught by the upiita",
+        "es": "Ruta recomendada de carreras impartidas por la upiita"
+      },
+      "tecnologies": ["React"],
+      "github": "https://github.com/leoopez/RoadMapUpiita",
+      "deploy": "https://roadmapupiiita.netlify.app"
     },
-    "presentation": {
-        "name": "Leonardo Ortiz Lopez",
-        "en": {
-            "title": " Hi, I am ",
-            "commands": [
-                "Welcome to my Porfolio",
-                "Software Engineer",
-                "Full Stack Web Developer",
-                "Focus on Backend and AWS"
-            ]
-        },
-        "es": {
-            "title": " Hola, soy ",
-            "commands": [
-                "Bienvenido a mi Portafolio",
-                "Ingeniero de Software",
-                "Desarrollador Full Stack",
-                "Especialista en Backend y AWS"
-            ]
-        }
-    },
-    "technologies": {
-        "en": {
-            "title": "Technologies"
-        },
-        "es": {
-            "title": "Tecnologías"
-        },
-        "subjects": [
-            {
-                "en": {
-                    "key": "Languages"
-                },
-                "es": {
-                    "key": "Lenguajes"
-                },
-                "items": [
-                    "JS/Typescript",
-                    "Go",
-                    "C++",
-                    "Python"
-                ]
-            },
-            {
-                "en": {
-                    "key": "Frontend"
-                },
-                "es": {
-                    "key": "Frontend"
-                },
-                "items": [
-                    "React",
-                    "Redux",
-                    "Webpack",
-                    "HTML/CSS",
-                    "SASS"
-                ]
-            },
-            {
-                "en": {
-                    "key": "Backend"
-                },
-                "es": {
-                    "key": "Backend"
-                },
-                "items": [
-                    "Mongo DB",
-                    "PostgresDB",
-                    "Amazon Web Services"
-                ]
-            }, 
-            {
-                "en": {
-                    "key": "DevOps"
-                },
-                "es": {
-                    "key": "DevOps"
-                },
-                "items": [
-                    "Docker"
-                ]
-            },
-            {
-                "en": {
-                    "key": "Cloud"
-                },
-                "es": {
-                    "key": "La Nube"
-                },
-                "items": [
-                    "AWS"
-                ]
-            },
-            {
-                "en": {
-                    "key": "Tools"
-                },
-                "es": {
-                    "key": "Herramientas"
-                },
-                "items": [
-                    "Git",
-                    "GraphQL",
-                    "Bitbucket"
-                ]
-            }
-        ]
-    },
-    "skills": {
-        "en": {
-            "title": "Skills",
-            "items": [
-                {
-                    "key": "designPatterns",
-                    "items": [
-                        "OOP",
-                        "Event-driven",
-                        "Functional Programming"
-                    ]
-                },
-                {
-                    "key": "architectures",
-                    "items": [
-                        "Microservices"
-                    ]
-                },
-                {
-                    "key": "computerScience",
-                    "items": [
-                        "Algorithms",
-                        "Data Structures",
-                        "Databases",
-                        "Operating Systems"
-                    ]
-                }
-            ]
-        },
-        "es": {
-            "title": "Habilidades",
-            "items": [
-                {
-                    "key": "patronesDeDiseno",
-                    "items": [
-                        "POO",
-                        "Event-driven",
-                        "Programacion Funcional"
-                    ]
-                },
-                {
-                    "key": "arquitecturas",
-                    "items": [
-                        "Microservicios"
-                    ]
-                },
-                {
-                    "key": "computerScience",
-                    "items": [
-                        "Algoritmos",
-                        "Estructura de Datos",
-                        "Bases de Datos",
-                        "Sistemas Operativos"
-                    ]
-                }
-            ]
-        },
-        "icons":  [
-            "js",
-            "go",
-            "cpp",
-            "js",
-            "ts",
-            "cpp",
-            "cpp",
-            "css",
-            "css"
-        ]
-    },
-    "hobbies": {
-        "en": [
-            "Chess",
-            "Competitive Programming"
-        ],
-        "es": [
-            "Ajedrez",
-            "Competencia de Programacion"
-        ]
-    },
-    "contact" : {
-        "en": {
-            "title": "Contact"
-        },
-        "es": {
-            "title": "Contacto"
-        },
-        "links": {
-            "LINKEDIN_URL": "https://www.linkedin.com/in/leoocode" ,
-            "GITHUB_URL ": "https://github.com/leoopez"
-        }
+    {
+      "title": "Portfolio",
+      "description": {
+        "en": "Personal Portofolio",
+        "es": "Portafolio Personal"
+      },
+      "tecnologies": ["React", "Webpack", "Sass"],
+      "github": "https://github.com/leoopez/leoopez.github.io",
+      "deploy": "https://leoocode.netlify.app/"
     }
+  ],
+  "navigation": {
+    "en": ["Technologies", "Skills", "Contact"],
+    "es": ["Tecnologías", "Habilidades", "Contacto"]
+  },
+  "presentation": {
+    "name": "Leonardo Ortiz Lopez",
+    "en": {
+      "title": " Hi, I am ",
+      "commands": [
+        "Welcome to my Porfolio",
+        "Software Engineer",
+        "Full Stack Web Developer",
+        "Focus on Backend and AWS"
+      ]
+    },
+    "es": {
+      "title": " Hola, soy ",
+      "commands": [
+        "Bienvenido a mi Portafolio",
+        "Ingeniero de Software",
+        "Desarrollador Full Stack",
+        "Especialista en Backend y AWS"
+      ]
+    }
+  },
+  "technologies": {
+    "en": {
+      "title": "Technologies"
+    },
+    "es": {
+      "title": "Tecnologías"
+    },
+    "subjects": [
+      {
+        "en": {
+          "key": "Languages"
+        },
+        "es": {
+          "key": "Lenguajes"
+        },
+        "items": ["JS/Typescript", "Go", "C++", "Python"]
+      },
+      {
+        "en": {
+          "key": "Frontend"
+        },
+        "es": {
+          "key": "Frontend"
+        },
+        "items": ["React", "Redux", "Webpack", "HTML/CSS", "SASS"]
+      },
+      {
+        "en": {
+          "key": "Backend"
+        },
+        "es": {
+          "key": "Backend"
+        },
+        "items": ["Mongo DB", "PostgresDB", "Amazon Web Services"]
+      },
+      {
+        "en": {
+          "key": "DevOps"
+        },
+        "es": {
+          "key": "DevOps"
+        },
+        "items": ["Docker"]
+      },
+      {
+        "en": {
+          "key": "Cloud"
+        },
+        "es": {
+          "key": "La Nube"
+        },
+        "items": ["AWS"]
+      },
+      {
+        "en": {
+          "key": "Tools"
+        },
+        "es": {
+          "key": "Herramientas"
+        },
+        "items": ["Git", "GraphQL", "Bitbucket"]
+      }
+    ]
+  },
+  "skills": {
+    "en": {
+      "title": "Skills",
+      "items": [
+        {
+          "key": "designPatterns",
+          "items": ["OOP", "Event-driven", "Functional Programming"]
+        },
+        {
+          "key": "architectures",
+          "items": ["Microservices"]
+        },
+        {
+          "key": "computerScience",
+          "items": ["Algorithms", "Data Structures", "Databases", "Operating Systems"]
+        }
+      ]
+    },
+    "es": {
+      "title": "Habilidades",
+      "items": [
+        {
+          "key": "patronesDeDiseno",
+          "items": ["POO", "Event-driven", "Programacion Funcional"]
+        },
+        {
+          "key": "arquitecturas",
+          "items": ["Microservicios"]
+        },
+        {
+          "key": "computerScience",
+          "items": ["Algoritmos", "Estructura de Datos", "Bases de Datos", "Sistemas Operativos"]
+        }
+      ]
+    },
+    "icons": ["js", "go", "cpp", "js", "ts", "cpp", "cpp", "css", "css"]
+  },
+  "hobbies": {
+    "en": ["Chess", "Competitive Programming"],
+    "es": ["Ajedrez", "Competencia de Programacion"]
+  },
+  "contact": {
+    "en": {
+      "title": "Contact"
+    },
+    "es": {
+      "title": "Contacto"
+    },
+    "links": {
+      "LINKEDIN_URL": "https://www.linkedin.com/in/leoocode",
+      "GITHUB_URL ": "https://github.com/leoopez"
+    }
+  }
 }
